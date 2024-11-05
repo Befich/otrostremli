@@ -26,9 +26,9 @@ ax.set_title('Distribución entre arroz y maiz plantados')
 st.pyplot(fig)
 #Boton
 if st.button("Arroz(foto)"):
-  st.image("sunrise.jpg", caption="Brotes de arroz")
+  st.image("arorooz.jpg", caption="Brotes de arroz")
 if st.button("Maiz(foto)"):
-  st.image("sunrise.jpg", caption="Brotes de maiz")
+  st.image("maiztoiuhs.jpg", caption="Brotes de maiz")
 st.write("""
 ## Muestra de datos cargados
 """)
