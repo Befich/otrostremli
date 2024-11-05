@@ -18,11 +18,11 @@ cant_rice = len(df_rice)
 # Tomando datos para Maiz y contando la cantidad
 df_maize = df[df["Crop_Type"] == "Maize"]
 cant_maize = len(df_maize)
-
-ax[1].bar(["Arroz", "Maiz"], [cant_rice, cant_maize], color = "#2EAEB8")
-ax[1].set_xlabel("Tipo de cosecha")
-ax[1].set_ylabel("Cantidad")
-ax[1].set_title('Distribución entre arroz y maiz plantados')
+fig,ax = plt.subplots()
+ax.bar(["Arroz", "Maiz"], [cant_rice, cant_maize], color = "#2EAEB8")
+ax.set_xlabel("Tipo de cosecha")
+ax.set_ylabel("Cantidad")
+ax.set_title('Distribución entre arroz y maiz plantados')
 
 st.write("""
 ## Muestra de datos cargados
