@@ -8,7 +8,7 @@ df = pd.read_csv("agriculture_dataset.csv")
 # Muestra un título y una descripción en la aplicación Streamlit.
 st.write("""
 # Comparacion entre dos tipos de cosechas
-## Gráficos usando la base de datos de agricultura
+## Gráfico usando la base de datos de agricultura
 """)
 
 # Tomando datos para arroz y contando la cantidad
@@ -24,7 +24,11 @@ ax.set_xlabel("Tipo de cosecha")
 ax.set_ylabel("Cantidad")
 ax.set_title('Distribución entre arroz y maiz plantados')
 st.pyplot(fig)
-
+#Boton
+if st.button("Arroz(foto)"):
+  st.image("sunrise.jpg", caption="Brotes de arroz")
+if st.button("Maiz(foto)"):
+  st.image("sunrise.jpg", caption="Brotes de maiz")
 st.write("""
 ## Muestra de datos cargados
 """)
