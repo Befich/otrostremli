@@ -11,8 +11,6 @@ st.write("""
 ## Gráficos usando la base de datos de agricultura
 """)
 
-
-
 # Tomando datos para arroz y contando la cantidad
 df_rice = df[df["Crop_Type"] == "Rice"]
 cant_rice = len(df_rice)
@@ -25,9 +23,6 @@ ax[1].bar(["Arroz", "Maiz"], [cant_rice, cant_maize], color = "#2EAEB8")
 ax[1].set_xlabel("Tipo de cosecha")
 ax[1].set_ylabel("Cantidad")
 ax[1].set_title('Distribución entre arroz y maiz plantados')
-
-# Desplegamos el gráfico
-st.pyplot(fig)
 
 st.write("""
 ## Muestra de datos cargados
