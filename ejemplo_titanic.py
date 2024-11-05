@@ -23,6 +23,7 @@ ax.bar(["Arroz", "Maiz"], [cant_rice, cant_maize], color = "#2EAEB8")
 ax.set_xlabel("Tipo de cosecha")
 ax.set_ylabel("Cantidad")
 ax.set_title('Distribución entre arroz y maiz plantados')
+st.pyplot(fig)
 
 st.write("""
 ## Muestra de datos cargados
