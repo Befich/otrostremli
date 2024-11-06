@@ -60,6 +60,18 @@ if respuesta == correctooo:
 elif respuesta == "Maíz":
     st.error(f"Incorrecto. El tipo de cosecha en mayor cantidad es {correctooo}.") # error resalta la equivocacion
 
+# Pregunta al usuario sobre el tipo de cosecha en mayor cantidad
+corpregdos = "Primavera"
+respuestdos = st.radio(
+    "Según la información acerca del maíz, ¿Cuando se siembra?",
+    ["Otoño", "Primavera", "Verano"], index = None) #None para que no este seleccionada alguna desde el principio
+
+if respuesdos == "Otoño":
+    st.error(f"Incorrecto. Se siembra en {corpregdos}.")
+if respuesdos == "corpregdo":
+    st.sucess(f"¡Correcto! Se siembra en {corpregdos}.") 
+if respuesdos == "Verano":
+    st.error(f"Incorrecto. Se siembra en {corpregdos}.") 
 # Usando la notación "with" para crear una barra lateral en la aplicación Streamlit.
 with st.sidebar:
     div = st.slider('Número de bins:', 0, 50, 10)
