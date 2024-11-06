@@ -48,13 +48,13 @@ Condiciones: Clima cálido, suelo bien drenado, luz solar abundante, y riego mod
 
 # Pregunta al usuario sobre el tipo de cosecha en mayor cantidad
 correctooo = "Arroz"
-respuesta_usuario = st.radio(
+respuesta = st.radio(
     "Según la tabla, ¿cuál es el tipo de cosecha en mayor cantidad?",
     ["Maíz", "Arroz"])
 
 # Mostrar si la respuesta del usuario es correcta o incorrecta
 if respuesta_usuario:
-    if respuesta_usuario == respuesta_correcta:
+    if respuesta == correctooo:
         st.success(f"¡Correcto! El tipo de cosecha en mayor cantidad es {respuesta_correcta}.") # sucess resalta lo correcto
     else:
         st.error(f"Incorrecto. El tipo de cosecha en mayor cantidad es {respuesta_correcta}.") # error resalta la equivocacion
