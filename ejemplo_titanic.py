@@ -21,6 +21,7 @@ cant_maize = len(df_maize)
 
 # Si el checkbox está activado, usar un color diferente
 with st.sidebar:
+    st.write("# Opciones")
     casilla_colorbarra = st.checkbox("Color de barras alternativo", value=False)
 if casilla_colorbarra == True:
     colore = "#EB840E"  # si esta marcado
@@ -34,14 +35,19 @@ ax.set_ylabel("Cantidad")
 ax.set_title('Distribución entre arroz y maiz plantados')
 st.pyplot(fig)
 #Boton
-if st.button("Arroz(foto)"):
+if st.button("Informacion sobre el arroz"):
   st.image("arorooz.jpg", caption="Brotes de arroz")
-if st.button("Maiz(foto)"):
-  st.image("maiztoiuhs.jpg", caption="Brotes de maiz")
+  st.write("Siembra: Primavera-Verano (mayo-junio).
+Cosecha: 6-8 meses después de la siembra (octubre-diciembre).
+Condiciones: Clima cálido, mucha agua, suelos ricos en nutrientes y buena exposición al sol.")  
+if st.button("Información sobre el maíz"):
+  st.image("maiztoiuhs.jpg", caption="Brotes de maíz")
+  st.write("Siembra: Primavera (marzo-mayo).
+Cosecha: 2-4 meses después de la siembra (julio-octubre).
+Condiciones: Clima cálido, suelo bien drenado, luz solar abundante, y riego moderado.")
 
 # Usando la notación "with" para crear una barra lateral en la aplicación Streamlit.
 with st.sidebar:
-    st.write("# Opciones")
     div = st.slider('Número de bins:', 0, 50, 10)
     st.write("Bins=", div)
 
