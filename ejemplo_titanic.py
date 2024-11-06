@@ -50,7 +50,7 @@ Condiciones: Clima cálido, suelo bien drenado, luz solar abundante, y riego mod
 correctooo = "Arroz"
 respuesta = st.radio(
     "Según la tabla, ¿cuál es el tipo de cosecha en mayor cantidad?",
-    ["Maíz", "Arroz"])
+    ["Maíz", "Arroz"], index= -1) #index -1 para que no este seleccionada alguna desde el principio
 
 # Mostrar si la respuesta del usuario es correcta o incorrecta
 if respuesta == correctooo:
