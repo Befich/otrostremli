@@ -37,14 +37,14 @@ st.pyplot(fig)
 #Boton
 if st.button("Informacion sobre el arroz"):
   st.image("arorooz.jpg", caption="Brotes de arroz")
-  st.write("Siembra: Primavera-Verano (mayo-junio).
+  st.write("""Siembra: Primavera-Verano (mayo-junio).
 Cosecha: 6-8 meses después de la siembra (octubre-diciembre).
-Condiciones: Clima cálido, mucha agua, suelos ricos en nutrientes y buena exposición al sol.")  
+Condiciones: Clima cálido, mucha agua, suelos ricos en nutrientes y buena exposición al sol.""")  
 if st.button("Información sobre el maíz"):
   st.image("maiztoiuhs.jpg", caption="Brotes de maíz")
-  st.write("Siembra: Primavera (marzo-mayo).
+  st.write("""Siembra: Primavera (marzo-mayo).
 Cosecha: 2-4 meses después de la siembra (julio-octubre).
-Condiciones: Clima cálido, suelo bien drenado, luz solar abundante, y riego moderado.")
+Condiciones: Clima cálido, suelo bien drenado, luz solar abundante, y riego moderado.""")
 
 # Usando la notación "with" para crear una barra lateral en la aplicación Streamlit.
 with st.sidebar:
