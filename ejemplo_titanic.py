@@ -62,7 +62,7 @@ elif respuesta == "Maíz":
 
 # Pregunta al usuario sobre el tipo de cosecha en mayor cantidad
 corpregdos = "Primavera"
-respuestdos = st.radio(
+respuesdos = st.radio(
     "Según la información acerca del maíz, ¿Cuando se siembra?",
     ["Otoño", "Primavera", "Verano"], index = None) #None para que no este seleccionada alguna desde el principio
 
