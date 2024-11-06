@@ -46,6 +46,19 @@ if st.button("Información sobre el maíz"):
 Cosecha: 2-4 meses después de la siembra (julio-octubre).
 Condiciones: Clima cálido, suelo bien drenado, luz solar abundante, y riego moderado.""")
 
+# Pregunta al usuario sobre el tipo de cosecha en mayor cantidad
+correctooo = "Arroz"
+respuesta_usuario = st.radio(
+    "Según la tabla, ¿cuál es el tipo de cosecha en mayor cantidad?",
+    ["Maíz", "Arroz"])
+
+# Mostrar si la respuesta del usuario es correcta o incorrecta
+if respuesta_usuario:
+    if respuesta_usuario == respuesta_correcta:
+        st.success(f"¡Correcto! El tipo de cosecha en mayor cantidad es {respuesta_correcta}.") # sucess resalta lo correcto
+    else:
+        st.error(f"Incorrecto. El tipo de cosecha en mayor cantidad es {respuesta_correcta}.") # error resalta la equivocacion
+
 # Usando la notación "with" para crear una barra lateral en la aplicación Streamlit.
 with st.sidebar:
     div = st.slider('Número de bins:', 0, 50, 10)
