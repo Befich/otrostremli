@@ -68,7 +68,7 @@ respuesdos = st.radio(
 
 if respuesdos == "Otoño":
     st.error(f"Incorrecto. El maíz se siembra en {corpregdos}.")
-if respuesdos == "corpregdo":
+if respuesdos == "corpregdos":
     st.success(f"¡Correcto! El maíz se siembra en {corpregdos}.") 
 if respuesdos == "Verano":
     st.error(f"Incorrecto. El maíz se siembra en  {corpregdos}.") 
