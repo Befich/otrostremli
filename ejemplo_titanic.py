@@ -43,12 +43,12 @@ with st.sidebar:
     st.write("Bins=", div)
 
 # Desplegamos un histograma con los datos del eje X
-fig, ax = plt.subplots(1, 2, figsize=(10, 3))
-ax.hist(df["Fertilizer_Used(tons)"], bins=div)
-ax.set_xlabel("Toneladas")
-ax.set_ylabel("Frecuencia")
-ax.set_title("Histograma Fertilizante usado")
-st.pyplot(fig)
+figg, axs = plt.subplots(1, 2, figsize=(10, 3))
+axs.hist(df["Fertilizer_Used(tons)"], bins=div)
+axs.set_xlabel("Toneladas")
+axs.set_ylabel("Frecuencia")
+axs.set_title("Histograma Fertilizante usado")
+st.pyplot(figg)
 
 
 
