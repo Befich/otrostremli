@@ -20,14 +20,15 @@ df_maize = df[df["Crop_Type"] == "Maize"]
 cant_maize = len(df_maize)
 
 # Si el checkbox está activado, usar un color diferente
-casilla_colorbarra = st.checkbox("Color de barras alternativo", value=False)
-if casilla_colorbarra ==True:
-    color = "#EB840E"  # si esta marcado
+with st.sidebar:
+    casilla_colorbarra = st.checkbox("Color de barras alternativo", value=False)
+if casilla_colorbarra == True:
+    colore = "#EB840E"  # si esta marcado
 else:
-    color = "#2EAEB8"  
+    colore = "#2EAEB8"  
 
 fig,ax = plt.subplots()
-ax.bar(["Arroz", "Maiz"], [cant_rice, cant_maize], color = "#2EAEB8")
+ax.bar(["Arroz", "Maiz"], [cant_rice, cant_maize], color = colore)
 ax.set_xlabel("Tipo de cosecha")
 ax.set_ylabel("Cantidad")
 ax.set_title('Distribución entre arroz y maiz plantados')
