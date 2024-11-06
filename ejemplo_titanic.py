@@ -34,12 +34,14 @@ ax.set_xlabel("Tipo de cosecha")
 ax.set_ylabel("Cantidad")
 ax.set_title('Distribución entre arroz y maiz plantados')
 st.pyplot(fig)
-#Boton
+
+#Botones
 if st.button("Informacion sobre el arroz"):
   st.image("arorooz.jpg", caption="Brotes de arroz")
   st.write("""Siembra: Primavera-Verano (mayo-junio).
 Cosecha: 6-8 meses después de la siembra (octubre-diciembre).
 Condiciones: Clima cálido, mucha agua, suelos ricos en nutrientes y buena exposición al sol.""")  
+    
 if st.button("Información sobre el maíz"):
   st.image("maiztoiuhs.jpg", caption="Brotes de maíz")
   st.write("""Siembra: Primavera (marzo-mayo).
@@ -55,7 +57,7 @@ respuesta = st.radio(
 # Mostrar si la respuesta del usuario es correcta o incorrecta
 if respuesta == correctooo:
     st.success(f"¡Correcto! El tipo de cosecha en mayor cantidad es {correctooo}.") # sucess resalta lo correcto
-else:
+elif respuesta == "Maíz":
     st.error(f"Incorrecto. El tipo de cosecha en mayor cantidad es {correctooo}.") # error resalta la equivocacion
 
 # Usando la notación "with" para crear una barra lateral en la aplicación Streamlit.
