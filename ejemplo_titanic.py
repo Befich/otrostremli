@@ -53,11 +53,10 @@ respuesta = st.radio(
     ["Maíz", "Arroz"])
 
 # Mostrar si la respuesta del usuario es correcta o incorrecta
-if respuesta_usuario:
-    if respuesta == correctooo:
-        st.success(f"¡Correcto! El tipo de cosecha en mayor cantidad es {correctooo}.") # sucess resalta lo correcto
-    else:
-        st.error(f"Incorrecto. El tipo de cosecha en mayor cantidad es {correctooo}.") # error resalta la equivocacion
+if respuesta == correctooo:
+    st.success(f"¡Correcto! El tipo de cosecha en mayor cantidad es {correctooo}.") # sucess resalta lo correcto
+else:
+    st.error(f"Incorrecto. El tipo de cosecha en mayor cantidad es {correctooo}.") # error resalta la equivocacion
 
 # Usando la notación "with" para crear una barra lateral en la aplicación Streamlit.
 with st.sidebar:
