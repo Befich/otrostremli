@@ -67,11 +67,11 @@ respuesdos = st.radio(
     ["Otoño", "Primavera", "Verano"], index = None) #None para que no este seleccionada alguna desde el principio
 
 if respuesdos == "Otoño":
-    st.error(f"Incorrecto. Se siembra en {corpregdos}.")
+    st.error(f"Incorrecto. El maíz se siembra en {corpregdos}.")
 if respuesdos == "corpregdo":
-    st.sucess(f"¡Correcto! Se siembra en {corpregdos}.") 
+    st.success(f"¡Correcto! El maíz se siembra en {corpregdos}.") 
 if respuesdos == "Verano":
-    st.error(f"Incorrecto. Se siembra en {corpregdos}.") 
+    st.error(f"Incorrecto. El maíz se siembra en  {corpregdos}.") 
 # Usando la notación "with" para crear una barra lateral en la aplicación Streamlit.
 with st.sidebar:
     div = st.slider('Número de bins:', 0, 50, 10)
