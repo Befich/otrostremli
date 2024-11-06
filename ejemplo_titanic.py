@@ -20,6 +20,7 @@ df_maize = df[df["Crop_Type"] == "Maize"]
 cant_maize = len(df_maize)
 
 # Si el checkbox está activado, usar un color diferente
+casilla_colorbarra = st.checkbox("Color de barras alternativo", value=False)
 if casilla_colorbarra:
     color = "#EB840E"  # si esta marcado
 else:
@@ -40,7 +41,6 @@ if st.button("Maiz(foto)"):
 # Usando la notación "with" para crear una barra lateral en la aplicación Streamlit.
 with st.sidebar:
     st.write("# Opciones")
-    casilla_colorbarra = st.checkbox("Color de barras alternativo", value=False)
     div = st.slider('Número de bins:', 0, 50, 10)
     st.write("Bins=", div)
 
