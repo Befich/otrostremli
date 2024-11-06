@@ -34,22 +34,16 @@ if st.button("Maiz(foto)"):
 with st.sidebar:
     # Título para la sección de opciones en la barra lateral.
     st.write("# Opciones")
-    
-    # Crea un control deslizante (slider) que permite al usuario seleccionar un número de bins
-    # en el rango de 0 a 10, con un valor predeterminado de 2.
     div = st.slider('Número de bins:', 0, 50, 10)
-    
-    # Muestra el valor actual del slider en la barra lateral.
     st.write("Bins=", div)
 
 # Desplegamos un histograma con los datos del eje X
-figg, axs = plt.subplots(1, 2, figsize=(10, 3))
-axs.hist(df["Fertilizer_Used(tons)"], bins=div)
-axs.set_xlabel("Toneladas")
-axs.set_ylabel("Frecuencia")
-axs.set_title("Histograma Fertilizante usado")
+figg, axx = plt.subplots(figsize=(8, 5))  
+axx.hist(df["Fertilizer_Used(tons)"], bins=div, color="#078385", edgecolor="#B77D26")
+axx.set_xlabel("Toneladas")
+axx.set_ylabel("Frecuencia")
+axx.set_title("Histograma Fertilizante usado")
 st.pyplot(figg)
-
 
 
 st.write("""
