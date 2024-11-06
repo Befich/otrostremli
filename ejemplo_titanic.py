@@ -57,7 +57,7 @@ respuesta = st.radio(
 # Mostrar si la respuesta del usuario es correcta o incorrecta
 if respuesta == correctooo:
     st.success(f"¡Correcto! El tipo de cosecha en mayor cantidad es {correctooo}.") # sucess resalta lo correcto
-    video_url = "https://github.com/Befich/otrostremli/blob/main/8%20Propiedades%20y%20Beneficios%20del%20Arroz.mp4"
+    video_url = "https://github.com/Befich/otrostremli/blob/main/8_Propiedades_y_Beneficios_del_Arroz.mp4"
     st.write("Aquí tienes un video sobre el arroz")
     st.video(video_url)
 elif respuesta == "Maíz":
